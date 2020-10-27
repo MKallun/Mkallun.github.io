@@ -20,6 +20,7 @@
 			  	cursor: pointer;
 			  	padding: 14px 16px;
 			  	transition: 0.3s;
+					font-size:17px;
 			}
 
 		/* Change background color of buttons on hover */
@@ -36,6 +37,7 @@
 			.tabcontent {
 			  	display: none;
 			  	padding: 6px 12px;
+					border: 1px solid #ccc
 			  	border-top: none;
 			}
 
@@ -72,10 +74,12 @@
 				}
 		</style>
 
+<font color="white" size="100%;"><Marquee direction="Left" accesskey="">Welcome to MassDestruction Official website</font></Marquee>
+
 	<body>
 		<!-- Tab links -->
 		<div class="tab">
-				<button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
+				<button class="tablinks" onclick="openTab(event, 'Home')"id="defaultOpen">Home</button>
 				<button class="tablinks" onclick="openTab(event, 'MS')">Member Stats</button>
 				<button class="tablinks" onclick="openTab(event, 'MA')">Match Archive</button>
 				<button class="tablinks" onclick="openTab(event, 'UL')">Useful links</button>
@@ -142,6 +146,9 @@
 		  	document.getElementById(tabName).style.display = "block";
 		  	evt.currentTarget.className += " active";
 		}
+
+		document.getElementById("defaultOpen").click();
+
 		</script>
 
 	</body>
