@@ -8,13 +8,14 @@
 			.tab {
 			  	overflow: hidden;
 			 	border: 1px solid #ccc;
-			  	background-color: #f1f1f1;
+			  	background-color: #333;
 			}
 
 		/* Style the buttons that are used to open the tab content */
 			.tab button {
 			  	background-color: inherit;
 			  	float: left;
+				display: block;
 			  	border: none;
 			  	outline: none;
 			  	cursor: pointer;
@@ -36,13 +37,12 @@
 		/* Style the tab content */
 			.tabcontent {
 			  	display: none;
-			  	padding: 6px 12px;
-					border: 1px solid #ccc
-			  	border-top: none;
+			  	padding: 14px 16px;
+				border: 1px solid #ccc
 			}
 
 			body {
-			  	background-color: #000000;
+			  	background-color:skyblue;
 			  	background-image: url('https://raw.githubusercontent.com/MKallun/Mkallun.github.io/main/background.png');
 			  	background-repeat: no-repeat;
 			  	background-attachment: fixed;
@@ -72,18 +72,27 @@
 				  	background-color: transparent;
 				  	text-decoration: underline;
 				}
+			.sticky{
+				position: fixed;
+				width: 100%;
+				top: 0%;
+			}
+			.sticky + .tab{
+				padding-top: 60px;
+			}
 		</style>
 
 <font color="white" size="100%;"><Marquee direction="Left" accesskey="">Welcome to MassDestruction Official website</font></Marquee>
 
 	<body>
 		<!-- Tab links -->
-		<div class="tab">
+		<div class="tab" id="navbar">
 				<button class="tablinks" onclick="openTab(event, 'Home')"id="defaultOpen">Home</button>
 				<button class="tablinks" onclick="openTab(event, 'MS')">Member Stats</button>
 				<button class="tablinks" onclick="openTab(event, 'MA')">Match Archive</button>
 				<button class="tablinks" onclick="openTab(event, 'UL')">Useful links</button>
 		</div>
+
 
 
 
@@ -145,7 +154,8 @@
 		  	</table></center>
 		</div>
 
-		<script>
+		<Script>
+			
 		function openTab(evt, tabName) {
 		  	var i, tabcontent, tablinks;
 		  	tabcontent = document.getElementsByClassName("tabcontent");
@@ -161,6 +171,24 @@
 		}
 
 		document.getElementById("defaultOpen").click();
+
+		// sticky bar
+		window.onscroll = function(){myFunction()};
+
+		//get the tab
+		var navbar = document.getElementById("navbar")
+
+		//gumana kana please
+		var sticky = navbar.offsetTop;
+
+		//i dont know why dis code is not working! did i miss something?
+		function myFunction(){
+			if(window.pageYOffset >= sticky){
+				navbar.classList.add("sticky")
+			} else {
+				navbar.classList.remove("sticky");
+			}
+		}
 
 		</script>
 
