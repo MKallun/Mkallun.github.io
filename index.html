@@ -149,7 +149,10 @@
 
 
 		<div id="MA" class="tabcontent">
+
+
 			<button type="button" class="collapsible">September</button>
+
 				<div class="content">
 				  	<a href="090120.html" 
 					  	target="popup" 
@@ -157,6 +160,24 @@
 					    	<h3>September 01, 2020 VS Archana (Lose)</h3>
 					</a>
 				</div>
+
+				<div class="content">
+				  	<a href="090520.html" 
+					  	target="popup" 
+					  	onclick="window.open('090520.html','popup','width=800,scrollbars=no,resizable=yes'); return false;">
+					    	<h3>September 05, 2020 VS AYAYA (Win)</h3>
+					</a>
+				</div>
+
+				<div class="content">
+				  	<a href="091320.html" 
+					  	target="popup" 
+					  	onclick="window.open('091320.html','popup','width=800,scrollbars=no,resizable=yes'); return false;">
+					    	<h3>September 13, 2020 VS Japanese name (Lose)</h3>
+					</a>
+				</div>
+
+
 
 
 			<button type="button" class="collapsible">October</button>
@@ -215,6 +236,7 @@
 
 
 		<script>
+		document.getElementsByClassName('tablinks')[0].click()
 		function openTab(evt, tabName) {
 		  	var i, tabcontent, tablinks;
 		  	tabcontent = document.getElementsByClassName("tabcontent");
