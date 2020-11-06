@@ -1,0 +1,224 @@
+<html>
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+
+		<style>
+
+			body { 
+			  	background-color: #5D89BA;
+			}
+
+			table {
+                border: 0px;
+                font-family:cambria;
+                font-size: 20px;      
+            }
+
+
+            td {
+                border: 0px black solid;
+                padding: 5px;
+                font-family:cambria;
+                font-size: 20px;  
+            }
+
+            a:link {
+					color: white;
+					background-color: transparent;
+					text-decoration: none;
+				}
+
+			a:visited {
+				  	color: white;
+				  	background-color: transparent;
+				  	text-decoration: none;
+				}
+
+			a:hover {
+				  	color: red;
+				  	background-color: transparent;
+				  	text-decoration: underline;
+				}
+
+			a:active {
+				  	color: red;
+				  	background-color: transparent;
+				  	text-decoration: underline;
+				}
+
+			.collapsible {
+			  	background-color: #777;
+			  	color: white;
+			  	cursor: pointer;
+			  	padding: 18px;
+			  	width: 100%;
+			  	border: none;
+			  	text-align: left;
+			  	outline: none;
+			  	font-size: 15px;
+			}
+
+			.active, .collapsible:hover {
+			  	background-color: #555;
+			}
+
+			.content {
+			  	padding: 0 18px;
+			  	display: none;
+			  	overflow: hidden;
+			  	background-color: #777;
+			}
+
+			p.comment {
+			  	height: 15em;
+			}
+
+			.container {
+			  	position: relative;
+			  	overflow: hidden;
+			  	width: 100%;
+			  	padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+			}
+
+			/* Then style the iframe to fit in the container div with full height and width */
+			.responsive-iframe {
+			  	position: absolute;
+			  	top: 0;
+			  	left: 0;
+			  	bottom: 0;
+			  	right: 0;
+			  	width: 100%;
+			  	height: 100%;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+ 		
+		<center>
+			<table width="100%">
+				<tr>
+					<td width="10%">
+						<a href="https://mkallun.github.io"><img src="https://raw.githubusercontent.com/MKallun/Mkallun.github.io/main/007-back.png"></a>
+					</td>
+					<td width="90%" style="padding-right: 15%">
+						<center><h3><font color="white" style="font-family:cambria"> November 6, 2020</font></h3></center>
+					</td>
+				</tr>
+			</table>
+			
+			<br>
+			<div class="container">
+				<iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/1JeM9BQqOlo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<br>
+			<br>
+			<br>
+			<button type="button" class="collapsible">Summon List</button>
+				<div class="content">
+					<table>
+						<tr>
+							<td width="30%">
+								<table style="color: white">
+									<tr>
+										<td>
+											Summon Sequence
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Red Rose
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Emil
+										</td>
+									</tr>
+									<tr>
+										<td>
+											ufo
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Diabolos  
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Ugallu
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Mau Achelon
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<p class="comment"><font color="white">Comment: <br> <br>
+									Interesting match up today, on first look enemy seems to be focused on debuffing with a 4 cleric 4 sorcerer lineup.<br> <br>
+									Post Battle comment, we werent able to deal with their debuff, their supports were chessboard weapon layout focused on heals and debuffs, they are slow on buffing themselves but it didnt mean anything since we were always on blue
+								</font></p>
+							</td>
+						</tr>
+					</table>
+				  	
+				</div>
+
+
+							
+
+
+						<!-- begin wwww.htmlcommentbox.com -->
+						 <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...</div>
+						 <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+						 <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&opts=16862&num=10&ts=1603989095387");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+						<!-- end www.htmlcommentbox.com -->
+
+			
+		</center>
+
+		<script>
+		document.getElementsByClassName('tablinks')[0].click()
+		function openTab(evt, tabName) {
+		  	var i, tabcontent, tablinks;
+		  	tabcontent = document.getElementsByClassName("tabcontent");
+		  	for (i = 0; i < tabcontent.length; i++) {
+		    	tabcontent[i].style.display = "none";
+		  	}
+		 	tablinks = document.getElementsByClassName("tablinks");
+		  	for (i = 0; i < tablinks.length; i++) {
+		    	tablinks[i].className = tablinks[i].className.replace(" active", "");
+		  	}
+		  	document.getElementById(tabName).style.display = "block";
+		  	evt.currentTarget.className += " active";
+		}
+		</script>
+
+		<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+			  	coll[i].addEventListener("click", function() {
+			    	this.classList.toggle("active");
+			    	var content = this.nextElementSibling;
+			    	if (content.style.display === "block") {
+			      		content.style.display = "none";
+			    	} else {
+			      	content.style.display = "block";
+			    	}
+			  	});
+			}
+		</script>
+
+	</body>
+
+</html>
+
