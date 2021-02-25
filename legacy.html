@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+
+		<style>
+			.tab {
+			  	overflow: hidden;
+			  	background-color: #777;
+			}
+
+
+			.tab button {
+			  	background-color: inherit;
+			  	color: white;
+			  	float: left;
+			  	border: none;
+			  	outline: none;
+			  	cursor: pointer;
+			  	padding: 14px 16px;
+			  	transition: 0.3s;
+			}
+
+			.tab button:hover {
+			  	background-color: #ddd;
+			}
+
+
+			.tab button.active {
+			  	background-color: #555;
+
+			}
+
+
+			.tabcontent {
+			  	display: none;
+			  	padding: 6px 12px;
+			  	border-top: none;
+			}
+
+			body, html { 
+				height: 100%;
+			  	background-color: #5D89BA;
+			  	background-image: url('https://raw.githubusercontent.com/MKallun/Mkallun.github.io/main/background.png');
+			  	background-repeat: no-repeat;
+			  	background-attachment: fixed;
+			  	background-position: right bottom;
+			  	font-family: cambria; 
+			}
+
+			a:link {
+					color: white;
+					background-color: transparent;
+					text-decoration: none;
+				}
+
+			a:visited {
+				  	color: white;
+				  	background-color: transparent;
+				  	text-decoration: none;
+				}
+
+			a:hover {
+				  	color: #000000;
+				  	background-color: transparent;
+				  	text-decoration: underline;
+				}
+
+			a:active {
+				  	color: #000000;
+				  	background-color: transparent;
+				  	text-decoration: underline;
+				}
+
+			table {
+                border-collapse: collapse;
+                font-family:cambria;
+                font-size: 20px;
+                text-shadow: 2px 2px #000000;            
+            }
+
+            td {
+                padding: 10px;
+                font-family:cambria;
+                font-size: 20px;
+                text-shadow: 3px 3px #000000;  
+            }
+
+            .collapsible {
+			  	background-color: #777;
+			  	color: white;
+			  	cursor: pointer;
+			  	padding: 18px;
+			  	width: 100%;
+			  	border: none;
+			  	text-align: left;
+			  	outline: none;
+			  	font-size: 15px;
+			}
+
+			.active, .collapsible:hover {
+			  	background-color: #555;
+			}
+
+			.content {
+			  	padding: 0 18px;
+			  	display: none;
+			  	overflow: hidden;
+			  	background-color: #777;
+			}
+			ul#links li {
+			  	display:inline;
+			  	padding:10px;
+			}
+
+			.hero-image {
+			  	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://raw.githubusercontent.com/MKallun/Mkallun.github.io/main/banner.jpg");
+			  	height: 25%;
+			  	background-position: center;
+			  	background-repeat: no-repeat;
+			  	background-size: cover;
+			  	position: relative; 
+			}
+
+			.hero-text {
+			  	text-align: center;
+			  	position: absolute;
+			  	top: 70%;
+			  	left: 50%;
+			  	transform: translate(-50%, -50%);
+			  	color: white;
+			}
+			.footer {
+			  	position: fixed;
+			  	left: 0;
+			  	bottom: 0;
+			  	width: 100%;
+			  	color: white;
+			  	text-align: center;
+			}
+
+		</style>
+	</head>
+
+
+
+	<body>
+
+
+		<div class="hero-image">
+			<div class="hero-text">
+			    <img src="https://raw.githubusercontent.com/MKallun/Mkallun.github.io/main/MassDestruction.png" width="90%" height="auto">
+			</div>
+		</div>
+
+	<!-- Tab links -->
+		<div class="tab">
+			<button class="tablinks" onclick="openTab(event, 'Home')"id="defaultOpen">Home</button>
+		  	<button class="tablinks" onclick="openTab(event, 'MA')">Match Archive</button>
+		  	<button class="tablinks" onclick="openTab(event, 'UL')">Useful links</button>
+		</div>
+
+	<!-- Tab content -->
+
+
+		<div id="Home" class="tabcontent">
+			<center>
+				<table>
+					<tr>
+						<a class="twitter-timeline" data-width="1000" data-height="800" data-theme="dark" href="https://twitter.com/sinoaliceglobal?ref_src=twsrc%5Etfw">Tweets by sinoaliceglobal</a> 
+					</tr>
+				</table>
+				</center>
+			
+		</div>
+
+
+
+
+
+
+
+
+
+		<div id="MA" class="tabcontent">
+
+
+			<button type="button" class="collapsible">September</button>
+
+				<div class="content">
+				  	<a href="090120.html" 
+					  	target="popup" 
+					  	onclick="window.open('090120.html','popup','width=800,scrollbars=no,resizable=yes'); return false;">
+					    	<h3>September 01, 2020 VS Archana (Lose)</h3>
+					</a>
+
+					<a href="090520.html" 
+					  	target="popup" 
+					  	onclick="window.open('090520.html','popup','width=800,scrollbars=no,resizable=yes'); return false;">
+					    	<h3>September 05, 2020 VS AYAYA (Win)</h3>
+					</a>
+
+					<a href="091320.html" 
+					  	target="popup" 
+					  	onclick="window.open('091320.html','popup','width=800,scrollbars=no,resizable=yes'); return false;">
+					    	<h3>September 13, 2020 VS Japanese name (Lose)</h3>
+					</a>
+
+
+					<a href="091320.html" 
+					  	target="popup" 
+					  	onclick="window.open('091320.html','popup','width=800,scrollbars=no,resizable=yes'); return false;">
+					    	<h3>September 16, 2020 VS Korean name (Win)</h3>
+					</a>
+
+					<a href="091720.html" 
+					  	target="popup" 
+					  	onclick="window.open('091720.html','popup','width=800,scrollbars=no,resizable=yes'); return false;">
+					    	<h3>September 17, 2020 VS NoTales (Lose)</h3>
+					</a>
+
+					<a href="091920.html" 
+					  	target="popup" 
+					  	onclick="window.open('091920.html','popup','width=800,scrollbars=no,resizable=yes'); return false;">
+					    	<h3>September 19, 2020 VS Veludo (Win)</h3>
+					</a>
+
+					<a href="092320.html" 
+					  	target="popup" 
+					  	onclick="window.open('092320.html','popup','width=800,scrollbars=no,resizable=yes'); return false;">
+					    	<h3>September 23, 2020 VS Forsaken (Lose)</h3>
+					</a>
+
+					<a href="092420.html" 
+					  	target="popup" 
+					  	onclick="window.open('092420.html','popup','width=800,scrollbars=no,resizable=yes'); return false;">
+					    	<h3>September 24, 2020 VS WaifuSG (Win)</h3>
+					</a>
+
+					<a href="092720.html" 
+					  	target="popup" 
+					  	onclick="window.open('092720.html','popup','width=800,scrollbars=no,resizable=yes'); return false;">
+					    	<h3>September 27, 2020 VS DLNP (Win)</h3>
+					</a>
+
+
+				</div>
+
+
+
+
+
+			<button type="button" class="collapsible">October</button>
+				<div class="content">
+
+				  	<a href="103120.html" 
+					  	target="popup" 
+					  	onclick="window.open('103120.html','popup','width=800,scrollbars=no,resizable=yes'); return false;">
+					    	<h3>October 31, 2020 VS Kugane (Win)</h3>
+					</a>
+				</div>
+
+			<button type="button" class="collapsible">November</button>
+				<div class="content">
+
+				  	<a href="110120.html" 
+					  	target="popup" 
+					  	onclick="window.open('110120.html','popup','width=800,scrollbars=no,resizable=yes'); return false;">
+					    	<h3>November 01, 2020 VS Korean name (Win)</h3>
+					</a>
+
+					<a href="110220.html" 
+					  	target="popup" 
+					  	onclick="window.open('110220.html','popup','width=800,scrollbars=no,resizable=yes'); return false;">
+					    	<h3>November 02, 2020 VS Alfamart (Lose)</h3>
+					</a>
+
+					<a href="110320.html" 
+					  	target="popup" 
+					  	onclick="window.open('110320.html','popup','width=800,scrollbars=no,resizable=yes'); return false;">
+					    	<h3>November 03, 2020 VS Archana (Lose)</h3>
+					</a>
+
+					<a href="110420.html" 
+					  	target="popup" 
+					  	onclick="window.open('110420.html','popup','width=800,scrollbars=no,resizable=yes'); return false;">
+					    	<h3>November 04, 2020 VS M.O.E (Win)</h3>
+					</a>
+
+					<a href="110520.html" 
+					  	target="popup" 
+					  	onclick="window.open('110520.html','popup','width=800,scrollbars=no,resizable=yes'); return false;">
+					    	<h3>November 05, 2020 VS Flandore (Lose)</h3>
+					</a>
+
+					<a href="110620.html" 
+					  	target="popup" 
+					  	onclick="window.open('110620.html','popup','width=800,scrollbars=no,resizable=yes'); return false;">
+					    	<h3>November 06, 2020 VS R.Storm (Lose)</h3>
+					</a>
+
+					<a href="110720.html" 
+					  	target="popup" 
+					  	onclick="window.open('110720.html','popup','width=800,scrollbars=no,resizable=yes'); return false;">
+					    	<h3>November 07, 2020 VS puresalt (Lose)</h3>
+					</a>
+
+					<a href="110920.html" 
+					  	target="popup" 
+					  	onclick="window.open('110920.html','popup','width=800,scrollbars=no,resizable=yes'); return false;">
+					    	<h3>November 09, 2020 VS Elfrinia (Lose)</h3>
+					</a>
+
+					<a href="111020.html" 
+					  	target="popup" 
+					  	onclick="window.open('111020.html','popup','width=800,scrollbars=no,resizable=yes'); return false;">
+					    	<h3>November 10, 2020 VS Longinus (Lose)</h3>
+					</a>
+
+					<a href="111120.html" 
+					  	target="popup" 
+					  	onclick="window.open('111120.html','popup','width=800,scrollbars=no,resizable=yes'); return false;">
+					    	<h3>November 11, 2020 VS Grimoire (Lose)</h3>
+					</a>
+				</div>
+		</div>
+
+
+
+
+
+
+
+
+		<div id="UL" class="tabcontent">
+		  	<center>
+		  		<ul id="links">
+				  	<li><a href="https://discord.gg/SuyYbaY"><img src="https://raw.githubusercontent.com/MKallun/Mkallun.github.io/main/003-discord.png"></a></li>
+				  	<li><a href="https://www.youtube.com/channel/UCIipghLvzDs5b9jnozbc7pQ"><img src="https://raw.githubusercontent.com/MKallun/Mkallun.github.io/main/002-youtube.png"></a></li>
+				  	<li><a href="https://twitter.com/sinoaliceglobal"><img src="https://raw.githubusercontent.com/MKallun/Mkallun.github.io/main/001-twitter.png"></a></li>
+				  	<li><a href="https://sinoalice.game-db.tw/nightmares"><img src="https://raw.githubusercontent.com/MKallun/Mkallun.github.io/main/005-Nightmare.jpg"></a></li>
+				  	<li><a href="https://sinoalice.game-db.tw/characters"><img src="https://raw.githubusercontent.com/MKallun/Mkallun.github.io/main/004-Sinoalice.png"></a></li>
+				  	<li><a href="https://github.com/MKallun"><img src="https://raw.githubusercontent.com/MKallun/Mkallun.github.io/main/006-Github.png"></a></li>
+				</ul> 
+
+				<br>
+				<br>
+					<center><iframe src="http://free.timeanddate.com/clock/i7ixh7li/fn9/fs36/fcfff/tct/pct/ftb/bas2/pl5/pr5/pt5/pb5/tt0/tw0/tm1/ta1/tb4" frameborder="0" width="341" height="98" allowTransparency="true"></iframe></center>
+
+				<div class="footer">Icons made by <a href="https://www.flaticon.local/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.local/" title="Flaticon">www.flaticon.local</a><br><br>
+		  		</div>
+		  	</center>
+		</div>
+
+
+
+
+
+
+
+		<script>
+		document.getElementsByClassName('tablinks')[0].click()
+		function openTab(evt, tabName) {
+		  	var i, tabcontent, tablinks;
+		  	tabcontent = document.getElementsByClassName("tabcontent");
+		  	for (i = 0; i < tabcontent.length; i++) {
+		    	tabcontent[i].style.display = "none";
+		  	}
+		 	tablinks = document.getElementsByClassName("tablinks");
+		  	for (i = 0; i < tablinks.length; i++) {
+		    	tablinks[i].className = tablinks[i].className.replace(" active", "");
+		  	}
+		  	document.getElementById(tabName).style.display = "block";
+		  	evt.currentTarget.className += " active";
+		}
+		</script>
+
+		<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+			  	coll[i].addEventListener("click", function() {
+			    	this.classList.toggle("active");
+			    	var content = this.nextElementSibling;
+			    	if (content.style.display === "block") {
+			      		content.style.display = "none";
+			    	} else {
+			      	content.style.display = "block";
+			    	}
+			  	});
+			}
+		</script>
+
+		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</body>
+</html>
